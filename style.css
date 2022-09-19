@@ -5,8 +5,10 @@
 }
 
 nav{
-   width: 250px;
-   height: 660px;
+   width: 362px;
+   height: 730px;
+   left: 0;
+   top: -30px;
    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
    display: flex;
    background-color: #52C8C8;
@@ -42,6 +44,8 @@ nav .logo{
     font-family: 'Roboto', sans-serif;
     margin: 30px;
     font-weight: bold;
+    font-style: italic;
+    font-size: 35px;
 }
 
 .link{
@@ -49,10 +53,11 @@ nav .logo{
     left: 79px;
     top: 137px;
     background-color: #D9D9D9;
-    border-radius: 15px;
-    height: 25px;
-    width: 110px;
+    border-radius: 20px;
+    height: 30px;
+    width: 200px;
     text-align: center;
-    margin-top: 50px;
-}
+    margin-top: 80px;
+    font-size: 20px;
 
+}
