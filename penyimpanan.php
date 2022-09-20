@@ -8,9 +8,9 @@ if(isset($_POST['simpan'])){
     $Nama_barang = $_POST ['Nama_barang'];
     $stock_barang = $_POST ['stock_barang'];
 
-    $sql = "INSERT INTO data_barang(Nama_siswa, kelas, kode_barang, Nama_barang, stock_barang) VALUE ('$Nama_siswa, $kelas, $kode_barang, $Nama_barang, $stock_barang)";
+    $sql = "INSERT INTO data_barang VALUES ('$Nama_siswa', '$kelas', '$kode_barang', '$Nama_barang', '$stock_barang')";
 
-    $query = mysqli_query($connect, $query);
+    $query = mysqli_query($connect, $sql);
 
     if($query){
         header('Location: tampilandatasiswa.php');

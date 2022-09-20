@@ -11,6 +11,7 @@ nav{
    top: -30px;
    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
    display: flex;
+   float: left;
    background-color: #52C8C8;
 }
 
@@ -55,9 +56,19 @@ nav .logo{
     background-color: #D9D9D9;
     border-radius: 20px;
     height: 30px;
-    width: 200px;
+    width: 300px;
     text-align: center;
     margin-top: 80px;
     font-size: 20px;
 
 }
+
+.link a{
+    text-decoration: none;
+}
+
+.box h3{
+    color: red;
+}
+
+/* tabel */
