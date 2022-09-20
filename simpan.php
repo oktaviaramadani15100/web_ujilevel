@@ -15,6 +15,6 @@ if(isset($_POST['simpan'])){
         header('Location: tampilandatabarang.php');
     }else{
         header('Location: edit.php?status=gagal');
-    }
+    }   
 }
 ?>

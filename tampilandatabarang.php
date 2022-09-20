@@ -29,6 +29,8 @@ include "koneksi.php";
 
     .td table th{
         background-color: #52C8C8;
+        width:200px;
+        height: 50px;
     }
 
     .td h4{
@@ -40,13 +42,15 @@ include "koneksi.php";
         border-radius: 10px;
     }
 
-    .link{
-        font-size: 15px;    
-        color: #808080;
-        height: 20px;
-        width: 210px;
+    .tombol tr td{
+        height: 30px;
     }
 
+    .tombol tr th{
+        text-align: center;
+    }
+
+/* navbar */
     *{
     margin: 0;
     padding: 0;
@@ -65,8 +69,8 @@ nav{
 }
 
 nav .logo{
-    height: 50px;
-    width: 50px;
+    height: 80px;
+    width: 80px;
     border-radius: 50%;
     justify-content: center;
     z-index: 2;
@@ -102,12 +106,22 @@ nav .logo{
     top: 137px;
     background-color: #D9D9D9;
     border-radius: 20px;
-    height: 30px;
-    width: 200px;
+    padding: 10px 10px;
     text-align: center;
     margin-top: 80px;
     font-size: 20px;
+    color: #808080;
+}
 
+
+
+.tombol tr a:first-child{
+    background-color: green;
+    border-radius: 5px;
+}
+.tombol tr a:nth-child(2){
+    background-color: red;
+    border-radius: 5px;
 }
 
     
@@ -131,7 +145,7 @@ nav .logo{
     <!-- tabel -->
 <div class="td">
     <h4><a href="databarang.php">Create</a></h4>
-    <table border="1";>
+    <table border="1"; class="tombol">
         <tr>
             <th>Kode_barang</th>
             <th>Nama_barang</th>
