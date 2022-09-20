@@ -35,8 +35,8 @@ include 'koneksi.php';
             <td>$pel[Nama_barang]</td>
             <td>$pel[stock_barang]</td>
             <td>
-            <a href=''>edit</a>
-            <a href=''>hapus</a>
+            <a href='edit.php?Nama_siswa=".$pel['Nama_siswa']."'>edit</a>
+            <a href='delete.php?Nama_siswa=".$pel['Nama_siswa']."'>hapus</a>
             </td>
             </tr>";
         }
