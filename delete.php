@@ -1,16 +1,16 @@
 <?php
 include 'koneksi.php';
 
-if(isset($_GET['Nama_siswa'])){
-    header('Location: tampilandatasiswa.php');
+if(isset($_GET['Kode_barang'])){
+    header('Location: tampilandatabarang.php');
 }
 
-$Nama_siswa =$_GET['Nama_siswa'];
-$sql = "DELETE FROM data_barang WHERE Nama_siswa='$Nama_siswa'";
+$Kode_barang =$_GET['Kode_barang'];
+$sql = "DELETE FROM data_barang WHERE Kode_barang='$Kode_barang'";
 $query = mysqli_query($connect, $sql);
 
 if($query){
-    header('Location: tampilandatasiswa.php');
+    header('Location: tampilandatabarang.php');
 }else{
     header('Location: delete.php?status=gagal');
 }
