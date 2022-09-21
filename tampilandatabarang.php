@@ -128,7 +128,30 @@ nav .logo{
     margin-left: 20px;
 }
 
+a{
+    color: white;
+    text-decoration: none;
+}
 
+
+.link-2{
+    position: absolute;
+    left: 85px;
+    top: 137px;
+    background-color: #D9D9D9;
+    border-radius: 20px;
+    padding: 10px 10px;
+    text-align: center;
+    margin-top: 150px;
+    font-size: 20px;
+    color: #808080;
+    margin-left: 20px;
+}
+
+h3{
+    margin-left: 850px;
+    
+}
 
     
 </style>
@@ -142,14 +165,19 @@ nav .logo{
             <div class="nama1">Aplikasi Name</div>
         </div>
        <div class="link">
-       <p>Data Barang</p>
+        <a href="tampilandatabarang.php"><p>Data Barang</p></a>
+        </div>
+
+        <div class="link-2">
+        <a href="datasiswa/tampilandatasiswa.php"><p>Data siswa</p></a>
         </div>
     </nav>
 
     
 
     <!-- tabel -->
-<div class="td">
+    <h3>Data Barang</h3>
+    <div class="td">
     <h4><a href="databarang.php">Create</a></h4>
     <table border="1"; class="tombol">
         <tr>

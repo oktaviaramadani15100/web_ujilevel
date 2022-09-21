@@ -8,7 +8,7 @@ if(isset($_POST['simpan'])){
     $Jurusan = $_POST['Jurusan'];
     $TTL = $_POST['TTL'];
 
-    $sql = "UPDATE data_siswa SET Nama_siswa='$Nama_siswa', Kelas='$Kelas', Jurusan='$Jurusan', TTL='$TTL' WHERE Id_barang='$Id_barang'";
+    $sql = "UPDATE data_siswa SET Nama_siswa='$Nama_siswa', Kelas='$Kelas', Jurusan='$Jurusan', TTL='$TTL' WHERE Id_siswa='$Id_siswa'";
 
     $query= mysqli_query($connect, $sql);
 

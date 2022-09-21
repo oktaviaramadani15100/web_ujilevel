@@ -62,7 +62,7 @@ nav .logo{
 
 .link{
     position: absolute;
-    left: 79px;
+    left: 100px;
     top: 137px;
     background-color: #D9D9D9;
     border-radius: 20px;
@@ -76,10 +76,10 @@ nav .logo{
 .box{
     position: absolute;
     text-align: center;
-    margin-left: 700px;
-    margin-top: 200px;
-    width:700px;
-    border-radius: 500px;
+    margin-left: 570px;
+    margin-top: 150px;
+    width:550px;
+    border-radius: 10%;
     background-color: #D9D9D9;
     height: 350px;
 }
@@ -103,8 +103,24 @@ nav .logo{
     margin-top: 30px;
 }
 
+.link-2{
+    position: absolute;
+    left: 85px;
+    top: 137px;
+    background-color: #D9D9D9;
+    border-radius: 20px;
+    padding: 10px 10px;
+    text-align: centerC;
+    margin-top: 150px;
+    font-size: 20px;
+    color: #808080;
+    margin-left: 20px;
+}
 
-
+a{
+    color: white;
+    text-decoration: none;
+}
 
     </style>
 </head>
@@ -116,7 +132,11 @@ nav .logo{
             <div class="nama1">Aplikasi Name</div>
         </div>
        <div class="link">
-       <p>Data Barang</p>
+       <a href="tampilandatabarang.php"><p>Data Barang</p></a>
+        </div>
+
+        <div class="link-2">
+        <a href="datasiswa/tampilandatasiswa.php"><p>Data siswa</p></a>
         </div>
     </nav>
 
