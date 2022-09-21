@@ -84,6 +84,8 @@ nav{
    display: flex;
    float: left;
    background-color: #52C8C8;
+   top: 0;
+   position: fixed;
 }
 
 nav .logo{
@@ -149,8 +151,9 @@ a{
 }
 
 h3{
-    margin-left: 850px;
-    
+    margin-left: 800px;
+    margin-top: 100px;
+    font-size: 40px;
 }
 
     
@@ -162,7 +165,7 @@ h3{
     <nav>
         <div class="profile">
             <div class="logo"></div>
-            <div class="nama1">Aplikasi Name</div>
+            <div class="nama1">SARPRAS</div>
         </div>
        <div class="link">
         <a href="tampilandatabarang.php"><p>Data Barang</p></a>

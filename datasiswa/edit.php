@@ -18,9 +18,134 @@ if(mysqli_num_rows($query) < 1){
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .belajar{
+            position: absolute;
+            margin-top: 100px;
+            margin-left: 550px;
+            border-radius: 10%;
+            background-color: #D9D9D9;
+            width: 530px;
+            height: 450px;
+            padding: 40px 40px;
+            box-shadow: -3px -3px 2px rgba(0,0,0,0.4);
+        }
+
+        .belajar h3{
+            text-align: center;
+            height: 50px;
+            padding-top: 30px;
+        }
+
+        .belajar p{
+            margin-left:50px;
+            margin: 40px;
+            
+        }
+
+        .belajar input{
+            margin-left: 30px;
+        }
+
+
+        
+    *{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+nav{
+   width: 362px;
+   height: 730px;
+   left: 0;
+   top: -30px;
+   box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+   display: flex;
+   float: left;
+   background-color: #52C8C8;
+}
+
+nav .logo{
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    justify-content: center;
+    background-color:white;
+}
+
+
+.profile {
+    display: flex;
+    height: fit-content;
+    justify-content: center;
+    align-items: center;
+    padding-left: 30px;
+    padding: 30px 0 0 30px;
+}
+
+.profile .nama1 {
+    margin-top: 5px;
+    margin-left: 30px;
+    font-family: 'Roboto', sans-serif;
+    margin: 30px;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 30px;
+}
+
+.link{
+    position: absolute;
+    left: 85px;
+    top: 137px;
+    background-color: #D9D9D9;
+    border-radius: 20px;
+    padding: 10px 10px;
+    text-align: center;
+    margin-top: 80px;
+    font-size: 20px;
+    color: #808080;
+    margin-left: 20px;
+}
+
+.link-2{
+    position: absolute;
+    left: 85px;
+    top: 137px;
+    background-color: #D9D9D9;
+    border-radius: 20px;
+    padding: 10px 10px;
+    text-align: center;
+    margin-top: 150px;
+    font-size: 20px;
+    color: #808080;
+    margin-left: 20px;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+    </style>
 </head>
 <body>
-<form action="update.php" method="post">
+
+<nav>
+        <div class="profile">
+            <div class="logo"></div>
+            <div class="nama1">SARPRAS</div>
+        </div>
+       <div class="link">
+       <a href="../tampilandatabarang.php"><p>Data Barang</p></a>
+        </div>
+
+        <div class="link-2">
+        <a href="tampilandatasiswa.php"><p>Data siswa</p></a>
+        </div>
+    </nav>
+
+    <div class="belajar">
+    <form action="update.php" method="post">
     <h3>Input Data Siswa</h3>
     <p><label>Id siswa : <input value="<?php echo $pel ['Id_siswa']?>" required type="text" name="Id_siswa"></label></p>
     <p><Label>Nama siswa : <input value="<?php echo $pel ['Nama_siswa']?>" required type="text" name="Nama_siswa"></Label></p>
@@ -29,5 +154,7 @@ if(mysqli_num_rows($query) < 1){
     <p><Label>TTL : <input value="<?php echo $pel ['TTL']?>" required type="text" name="TTL"></Label></p>
     <input type="submit" name="simpan" value="simpan">
     </form>
+    </div>
+
 </body>
 </html>

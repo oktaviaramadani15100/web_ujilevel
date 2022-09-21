@@ -151,14 +151,14 @@ a{
 <nav>
         <div class="profile">
             <div class="logo"></div>
-            <div class="nama1">Aplikasi Name</div>
+            <div class="nama1">SARPRAS</div>
         </div>
        <div class="link">
-        <a href="tampilandatabarang.php"><p>Data Barang</p></a>
+        <a href="../tampilandatabarang.php"><p>Data Barang</p></a>
         </div>
 
         <div class="link-2">
-        <a href="datasiswa/tampilandatasiswa.php"><p>Data siswa</p></a>
+        <a href="#"><p>Data siswa</p></a>
         </div>
     </nav>
 

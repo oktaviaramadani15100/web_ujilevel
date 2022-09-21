@@ -82,6 +82,7 @@ nav .logo{
     border-radius: 10%;
     background-color: #D9D9D9;
     height: 350px;
+    box-shadow: -3px -3px 2px rgba(0,0,0,0.4);
 }
 
 .box h3{
@@ -129,7 +130,7 @@ a{
     <nav>
         <div class="profile">
             <div class="logo"></div>
-            <div class="nama1">Aplikasi Name</div>
+            <div class="nama1">SARPRAS</div>
         </div>
        <div class="link">
        <a href="tampilandatabarang.php"><p>Data Barang</p></a>

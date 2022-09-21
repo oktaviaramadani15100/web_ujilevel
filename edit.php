@@ -30,6 +30,7 @@ if(mysqli_num_rows($query) < 1){
             width: 530px;
             height: 350px;
             padding: 40px 40px;
+            box-shadow: -3px -3px 2px rgba(0,0,0,0.4);
         }
 
         .belajar h3{
@@ -135,7 +136,7 @@ a{
 <nav>
         <div class="profile">
             <div class="logo"></div>
-            <div class="nama1">Aplikasi Name</div>
+            <div class="nama1">SARPRAS</div>
         </div>
        <div class="link">
        <a href="tampilandatabarang.php"><p>Data Barang</p></a>
