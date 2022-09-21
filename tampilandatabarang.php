@@ -37,20 +37,38 @@ include "koneksi.php";
         background-color: #52C8C8;
         margin-bottom: 4%;
         padding: 10px 10px;
-        width: 15%;
+        width: 100px;
         text-align: center;
         border-radius: 10px;
+       
     }
 
     .tombol tr td{
-        height: 30px;
-    }
-
-    .tombol tr th{
+        height: 50px;
         text-align: center;
     }
 
+    .tombol tr a:first-child{
+    background-color: #FD841F;
+    border-radius: 10px;
+    width: 500px;
+    height: 20px;
+    padding: 5px 10px 5px 10px;
+    font-size: 20px;
+    color: white;
+    
+    }
+    .tombol tr a:nth-child(2){
+    background-color: red;
+    border-radius: 10px;
+    height:20px;
+    font-size: 20px;
+    color: white;
+    padding: 5px 10px 5px 10px;
+    }
+
 /* navbar */
+
     *{
     margin: 0;
     padding: 0;
@@ -69,14 +87,11 @@ nav{
 }
 
 nav .logo{
-    height: 80px;
-    width: 80px;
+    height: 70px;
+    width: 70px;
     border-radius: 50%;
     justify-content: center;
-    z-index: 2;
     background-color:white;
-    
-
 }
 
 
@@ -87,7 +102,6 @@ nav .logo{
     align-items: center;
     padding-left: 30px;
     padding: 30px 0 0 30px;
-   
 }
 
 .profile .nama1 {
@@ -97,12 +111,12 @@ nav .logo{
     margin: 30px;
     font-weight: bold;
     font-style: italic;
-    font-size: 35px;
+    font-size: 30px;
 }
 
 .link{
     position: absolute;
-    left: 79px;
+    left: 85px;
     top: 137px;
     background-color: #D9D9D9;
     border-radius: 20px;
@@ -111,18 +125,10 @@ nav .logo{
     margin-top: 80px;
     font-size: 20px;
     color: #808080;
+    margin-left: 20px;
 }
 
 
-
-.tombol tr a:first-child{
-    background-color: green;
-    border-radius: 5px;
-}
-.tombol tr a:nth-child(2){
-    background-color: red;
-    border-radius: 5px;
-}
 
     
 </style>
@@ -162,8 +168,8 @@ nav .logo{
             <td>$pel[Nama_barang]</td>
             <td>$pel[Stock_barang]</td>
             <td>
-            <a href='edit.php?Kode_barang=".$pel['Kode_barang']."'>edit</a>
-            <a href='delete.php?Kode_barang=".$pel['Kode_barang']."'>hapus</a>
+            <a href='edit.php?Kode_barang=".$pel['Kode_barang']."'>Edit</a>
+            <a href='delete.php?Kode_barang=".$pel['Kode_barang']."'>Hapus</a>
             </td>
             </tr>";
         }
