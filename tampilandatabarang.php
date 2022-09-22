@@ -11,14 +11,15 @@ include "koneksi.php";
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100&family=Lobster&family=Roboto:wght@100;300;500&display=swap" rel="stylesheet">
-
+<!-- font-display -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lato:wght@100&family=Lobster&family=Roboto:ital,wght@0,100;0,300;0,500;1,100&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@100&family=Lobster&family=Playfair+Display:ital@1&family=Roboto:ital,wght@0,100;0,300;0,500;1,100&display=swap" rel="stylesheet">
 
+<!-- font-bitter -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@1,300&family=Lato:wght@100&family=Lobster&family=Playfair+Display:ital@1&family=Roboto:ital,wght@0,100;0,300;0,500;1,100&display=swap" rel="stylesheet">
 <style>
     .td{
         position: absolute;
@@ -33,13 +34,14 @@ include "koneksi.php";
         height: 50px;
     }
 
-    .td h4{
+    .td h4 {
         background-color: #52C8C8;
         margin-bottom: 4%;
         padding: 10px 10px;
         width: 100px;
         text-align: center;
         border-radius: 10px;
+        
        
     }
 
@@ -55,7 +57,7 @@ include "koneksi.php";
     height: 20px;
     padding: 5px 10px 5px 10px;
     font-size: 20px;
-    color: white;
+    font-family: 'Bitter', serif;
     
     }
     .tombol tr a:nth-child(2){
@@ -65,6 +67,7 @@ include "koneksi.php";
     font-size: 20px;
     color: white;
     padding: 5px 10px 5px 10px;
+    font-family: 'Bitter', serif;
     }
 
 /* navbar */
@@ -82,7 +85,6 @@ nav{
    top: -30px;
    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
    display: flex;
-   float: left;
    background-color: #52C8C8;
    top: 0;
    position: fixed;
@@ -109,14 +111,14 @@ nav .logo{
 .profile .nama1 {
     margin-top: 5px;
     margin-left: 30px;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Bitter', serif;
     margin: 30px;
     font-weight: bold;
     font-style: italic;
     font-size: 30px;
 }
 
-.link{
+.link p{
     position: absolute;
     left: 85px;
     top: 137px;
@@ -126,8 +128,10 @@ nav .logo{
     text-align: center;
     margin-top: 80px;
     font-size: 20px;
-    color: #808080;
+    color: black;
     margin-left: 20px;
+    width: 150px;
+    font-weight: bold;
 }
 
 a{
@@ -136,7 +140,7 @@ a{
 }
 
 
-.link-2{
+.link-2 p{
     position: absolute;
     left: 85px;
     top: 137px;
@@ -146,16 +150,53 @@ a{
     text-align: center;
     margin-top: 150px;
     font-size: 20px;
-    color: #808080;
+    color: black;
     margin-left: 20px;
+    width: 150px;
+    font-weight: bold;
 }
 
 h3{
     margin-left: 800px;
-    margin-top: 100px;
+    margin-top: 90px;
     font-size: 40px;
+    font-family: 'Playfair Display', serif;
 }
 
+.td h4 a{
+    font-family: 'Bitter', serif;
+    font-weight: bold;
+    color: black;
+    font-size: 20px;
+}
+
+.link a p{
+    font-family: 'Bitter', serif;
+}
+
+.link-2 a p{
+    font-family: 'Bitter', serif;
+}
+
+.link a p:hover{
+    background-color: red;
+    transition: 0.5s;
+}
+
+.link-2 a p:hover{
+    background-color: red;
+    transition: 0.5;
+}
+
+.td h4:hover{
+    background-color: red;
+    transition: 0.5;
+}
+
+.tombol td a:hover{
+    background-color: blue;
+    transition: 0.5;
+}
     
 </style>
 
@@ -176,7 +217,7 @@ h3{
         </div>
     </nav>
 
-    
+
 
     <!-- tabel -->
     <h3>Data Barang</h3>

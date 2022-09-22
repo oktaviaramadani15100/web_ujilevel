@@ -12,13 +12,21 @@ include "koneksi.php";
     <link rel="stylesheet" href="../web_ujilevel/style.css">
     <title>Document</title>
 
+    <!-- font-display -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@100&family=Lobster&family=Playfair+Display:ital@1&family=Roboto:ital,wght@0,100;0,300;0,500;1,100&display=swap" rel="stylesheet">
+
+<!-- font-bitter -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@1,300&family=Lato:wght@100&family=Lobster&family=Playfair+Display:ital@1&family=Roboto:ital,wght@0,100;0,300;0,500;1,100&display=swap" rel="stylesheet">
     <style>
         /* navbar */
 
     *{
     margin: 0;
     padding: 0;
-    font-family: 'Roboto', sans-serif;
 }
 
 nav{
@@ -53,14 +61,14 @@ nav .logo{
 .profile .nama1 {
     margin-top: 5px;
     margin-left: 30px;
-    font-family: 'Roboto', sans-serif;
     margin: 30px;
     font-weight: bold;
     font-style: italic;
-    font-size: 25px;
+    font-size: 30px;
+    font-family: 'Bitter', serif;
 }
 
-.link{
+.link a p{
     position: absolute;
     left: 100px;
     top: 137px;
@@ -70,7 +78,9 @@ nav .logo{
     text-align: center;
     margin-top: 80px;
     font-size: 20px;
-    color: #808080;
+    color: black;
+    width: 150px;
+    font-weight: bold;
 }
 
 .box{
@@ -81,7 +91,7 @@ nav .logo{
     width:550px;
     border-radius: 10%;
     background-color: #D9D9D9;
-    height: 350px;
+    height: 450px;
     box-shadow: -3px -3px 2px rgba(0,0,0,0.4);
 }
 
@@ -92,6 +102,7 @@ nav .logo{
     padding-top: 50px;
     padding: 10px;
     margin-top: 30px;
+    font-family: 'Playfair Display', serif;
 }
 
 .kotak{
@@ -104,18 +115,20 @@ nav .logo{
     margin-top: 30px;
 }
 
-.link-2{
+.link-2 a p{
     position: absolute;
     left: 85px;
     top: 137px;
     background-color: #D9D9D9;
     border-radius: 20px;
     padding: 10px 10px;
-    text-align: centerC;
+    text-align: center;
     margin-top: 150px;
     font-size: 20px;
-    color: #808080;
-    margin-left: 20px;
+    color: black;
+    margin-left: 15px;
+    width: 150px;
+    font-weight: bold;
 }
 
 a{
@@ -123,6 +136,47 @@ a{
     text-decoration: none;
 }
 
+.link a p{
+    font-family: 'Bitter', serif;
+}
+
+.link-2 a p{
+    font-family: 'Bitter', serif;
+}
+
+.box p label input{
+    border-radius: 20px;
+    width: 300px; 
+    height: 30px;   
+}
+
+.box input:nth-child(4){
+    background-color: BLUE;
+    width: 100px;
+    height:30px;
+    border-radius: 15px;
+    font-family: 'Bitter', serif;
+    color: white;
+}
+
+.kotak p label{
+    font-size: 20px;
+}
+
+.link a p:hover{
+    background-color: red;
+    transition: 0.5s;
+}
+
+.link-2 a p:hover{
+    background-color: red;
+    transition: 0.5;
+}
+
+.kotak input:nth-child(4):hover{
+    background-color: red;
+    transition: 0.5;
+}
     </style>
 </head>
 <body>

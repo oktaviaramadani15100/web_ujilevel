@@ -19,6 +19,15 @@ if(mysqli_num_rows($query) < 1){
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+     <!-- font-display -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@100&family=Lobster&family=Playfair+Display:ital@1&family=Roboto:ital,wght@0,100;0,300;0,500;1,100&display=swap" rel="stylesheet">
+
+<!-- font-bitter -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@1,300&family=Lato:wght@100&family=Lobster&family=Playfair+Display:ital@1&family=Roboto:ital,wght@0,100;0,300;0,500;1,100&display=swap" rel="stylesheet">
 
     <style>
         .belajar{
@@ -28,7 +37,7 @@ if(mysqli_num_rows($query) < 1){
             border-radius: 10%;
             background-color: #D9D9D9;
             width: 530px;
-            height: 350px;
+            height: 400px;
             padding: 40px 40px;
             box-shadow: -3px -3px 2px rgba(0,0,0,0.4);
         }
@@ -89,14 +98,14 @@ nav .logo{
 .profile .nama1 {
     margin-top: 5px;
     margin-left: 30px;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Bitter', serif;
     margin: 30px;
     font-weight: bold;
     font-style: italic;
     font-size: 30px;
 }
 
-.link{
+.link p{
     position: absolute;
     left: 85px;
     top: 137px;
@@ -106,11 +115,13 @@ nav .logo{
     text-align: center;
     margin-top: 80px;
     font-size: 20px;
-    color: #808080;
+    color: black;
     margin-left: 20px;
+    font-weight: bold ;
+    width: 150px;
 }
 
-.link-2{
+.link-2 p{
     position: absolute;
     left: 85px;
     top: 137px;
@@ -120,13 +131,70 @@ nav .logo{
     text-align: center;
     margin-top: 150px;
     font-size: 20px;
-    color: #808080;
+    color: black;
     margin-left: 20px;
+    font-weight: bold;
+    width: 150px;
 }
 
 a{
     color: white;
     text-decoration: none;
+}
+
+.link a p{
+    font-family: 'Bitter', serif;
+}
+
+.link-2 a p{
+    font-family: 'Bitter', serif;
+}
+
+.link a p:hover{
+    background-color: red;
+    transition: 0.5s;
+}
+
+.link-2 a p:hover{
+    background-color: red;
+    transition: 0.5;
+}
+
+.td h4 a:hover{
+    background-color: red;
+    transition: 0.5;
+}
+
+.tombol td a:hover{
+    background-color: blue;
+    transition: 0.5;
+}
+
+.belajar h3{
+    font-family:'Playfair Display', serif;
+    font-size: 30px;
+}
+
+.belajar p label input{
+    border-radius: 20px;
+    width: 300px;
+    height: 30px;
+    text-align: center;
+}
+
+
+.tombol input:nth-child(4){
+    background-color: red;
+    width: 100px;
+    height:30px;
+    border-radius: 20px;
+    margin-left: 230px;
+
+}
+
+.tombol input:nth-child(4):hover{
+    background-color: blue;
+    transition: 0.5s;
 }
 
     </style>
@@ -150,10 +218,13 @@ a{
     <div class="belajar">
     <form action="simpan.php" method="post">
         <h3>Input Data Barang</h3>
+        <div class="tombol">
         <p><Label>Kode barang : <input value="<?php echo $pel ['Kode_barang']?>" required type="text" name="Kode_barang"></Label></p>
         <p><label>Nama barang : <input value="<?php echo $pel ['Nama_barang']?>" required type="text" name="Nama_barang"></label></p>
         <p><label>Stock barang  : <input value="<?php echo $pel ['Stock_barang']?>" required type="text" name="Stock_barang"></label></p>
         <input type="submit" name="simpan" value="simpan">
+        </div>
+        
         
        
     </form>

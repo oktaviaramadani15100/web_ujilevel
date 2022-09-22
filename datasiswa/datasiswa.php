@@ -9,6 +9,17 @@ include 'koneksi.php';
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <!-- font-display -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@100&family=Lobster&family=Playfair+Display:ital@1&family=Roboto:ital,wght@0,100;0,300;0,500;1,100&display=swap" rel="stylesheet">
+
+<!-- font-bitter -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@1,300&family=Lato:wght@100&family=Lobster&family=Playfair+Display:ital@1&family=Roboto:ital,wght@0,100;0,300;0,500;1,100&display=swap" rel="stylesheet">
+
     <style>
          body{
             margin: 0;
@@ -46,14 +57,14 @@ nav .logo{
 .profile .nama1 {
     margin-top: 5px;
     margin-left: 30px;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Bitter', serif;
     margin: 30px;
     font-weight: bold;
     font-style: italic;
     font-size: 30px;
 }
 
-.link{
+.link p{
     position: absolute;
     left: 85px;
     top: 137px;
@@ -63,8 +74,12 @@ nav .logo{
     text-align: center;
     margin-top: 80px;
     font-size: 20px;
-    color: #808080;
+    color: black;
     margin-left: 20px;
+    font-family: 'Bitter', serif;
+    font-weight: bold;
+    width:150px;
+
 }
 
 a{
@@ -72,7 +87,7 @@ a{
     color: black;
 }
 
-.link-2{
+.link-2 p{
     position: absolute;
     left: 85px;
     top: 137px;
@@ -80,44 +95,82 @@ a{
     border-radius: 30px;
     padding: 10px;
     text-align: center;
-    margin-top: 170px;
+    margin-top: 150px;
     font-size: 20px;
-    color: #808080;
+    color:black;
     margin-left: 20px;
     width: 150px;
-    height: 70px;
     font-weight: bold;
+    font-family: 'Bitter', serif;
 }
 
 .box{
     position: absolute;
     text-align: center;
-    margin-left: 570px;
-    margin-top: 100px;
+    margin-left: 580px;
+    margin-top: 60px;
     width: 600px;
     border-radius: 10%;
     background-color: #D9D9D9;
-    height: 550px;
+    height: 600px;
     box-shadow: -3px -3px 2px rgba(0,0,0,0.4);
 }
 
 .box h3{
     text-align: center;
-    font-family: Roboto;
+    font-family: 'Playfair Display', serif;
     font-size: 30px;
     padding-top: 50px;
     padding: 10px;
     margin-top: 30px;
+
 }
 
 .kotak{
     margin-top: 50px;
     margin: 40px;
+    font-size:20px;
 }
 
-.kotak input{
-    margin-left: 30px;
-    margin-top: 30px;
+.kotak label Input{
+    margin-right: 20px;
+    margin-top: 20px;
+    border-radius:20px;
+    width:250px;    
+    height: 30px;
+    margin-left: 50px;
+    text-align: center;
+}
+
+.link a p:hover{
+    background-color: red;
+    transition: 0.5s;
+}
+
+.link-2 a p:hover{
+    background-color: red;
+    transition: 0.5;
+}
+
+.td h4:hover{
+    background-color: red;
+    transition: 0.5;
+}
+
+.tombol td a:hover{
+    background-color: blue;
+    transition: 0.5;
+}
+
+.kotak input:nth-child(6){
+    background-color: red;
+    border-radius: 20px;
+    width: 120px;
+    height: 30px;
+    margin-top:20px;
+    color: white;
+     font-family: 'Bitter', serif;
+
 }
 
     </style>

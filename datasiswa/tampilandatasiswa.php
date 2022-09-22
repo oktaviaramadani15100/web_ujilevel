@@ -9,6 +9,17 @@ include 'koneksi.php'
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+     <!-- font-display -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@100&family=Lobster&family=Playfair+Display:ital@1&family=Roboto:ital,wght@0,100;0,300;0,500;1,100&display=swap" rel="stylesheet">
+
+<!-- font-bitter -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@1,300&family=Lato:wght@100&family=Lobster&family=Playfair+Display:ital@1&family=Roboto:ital,wght@0,100;0,300;0,500;1,100&display=swap" rel="stylesheet">
+
     <style>
 
         body{
@@ -47,14 +58,14 @@ nav .logo{
 .profile .nama1 {
     margin-top: 5px;
     margin-left: 30px;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Bitter', serif;
     margin: 30px;
     font-weight: bold;
     font-style: italic;
     font-size: 30px;
 }
 
-.link{
+.link p{
     position: absolute;
     left: 85px;
     top: 137px;
@@ -64,8 +75,12 @@ nav .logo{
     text-align: center;
     margin-top: 80px;
     font-size: 20px;
-    color: #808080;
+    color: black;
     margin-left: 20px;
+    width: 150px;
+    font-family: 'Bitter', serif;
+    font-weight: bold;
+
 }
 
 a{
@@ -73,7 +88,7 @@ a{
     color: black;
 }
 
-.link-2{
+.link-2 p{
     position: absolute;
     left: 85px;
     top: 137px;
@@ -81,13 +96,14 @@ a{
     border-radius: 30px;
     padding: 10px;
     text-align: center;
-    margin-top: 170px;
+    margin-top: 150px;
     font-size: 20px;
-    color: #808080;
+    color: black;
     margin-left: 20px;
     width: 150px;
-    height: 70px;
+    font-family: 'Bitter', serif;
     font-weight: bold;
+    
 }
 
 .td{
@@ -102,8 +118,7 @@ a{
         width:150px;
         height: 50px;
     }
-
-    .td h4{
+    .td h4 {
         background-color: #52C8C8;
         margin-bottom: 4%;
         padding: 10px 10px;
@@ -143,6 +158,30 @@ a{
         font-size: 40px;
     }
 
+    .td h4 a{
+        font-family: 'Bitter', serif;
+        font-size:20px;
+    }
+
+    .link a p:hover{
+    background-color: red;
+    transition: 0.5s;
+}
+
+.link-2 a p:hover{
+    background-color: red;
+    transition: 0.5;
+}
+
+.td h4:hover{
+    background-color: red;
+    transition: 0.5;
+}
+
+.tombol td a:hover{
+    background-color: blue;
+    transition: 0.5;
+}
     </style>
    
 </head>
@@ -158,7 +197,7 @@ a{
         </div>
 
         <div class="link-2">
-        <a href="#"><p>Data siswa</p></a>
+        <a href="#"><p>Data Siswa</p></a>
         </div>
     </nav>
 
