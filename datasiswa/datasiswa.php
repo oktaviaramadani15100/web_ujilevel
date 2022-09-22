@@ -20,6 +20,11 @@ include 'koneksi.php';
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@1,300&family=Lato:wght@100&family=Lobster&family=Playfair+Display:ital@1&family=Roboto:ital,wght@0,100;0,300;0,500;1,100&display=swap" rel="stylesheet">
 
+<!-- quicksand -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@1,300&family=Lato:wght@100&family=Lobster&family=Playfair+Display:ital@1&family=Quicksand:wght@300&family=Roboto:ital,wght@0,100;0,300;0,500;1,100&display=swap" rel="stylesheet">
+
     <style>
          body{
             margin: 0;
@@ -33,7 +38,7 @@ nav{
    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
    display: flex;
    float: left;
-   background-color: #52C8C8;
+   background-color: #0F3460;
 }
 
 nav .logo{
@@ -61,7 +66,13 @@ nav .logo{
     margin: 30px;
     font-weight: bold;
     font-style: italic;
-    font-size: 30px;
+    font-size: 40px;
+    font-family: 'Bitter', serif;
+    color: white;
+}
+
+.link a p{
+    position: absolute;
 }
 
 .link p{
@@ -107,8 +118,8 @@ a{
 .box{
     position: absolute;
     text-align: center;
-    margin-left: 580px;
-    margin-top: 60px;
+    margin-left: 670px;
+    margin-top: 50px;
     width: 600px;
     border-radius: 10%;
     background-color: #D9D9D9;
@@ -123,13 +134,14 @@ a{
     padding-top: 50px;
     padding: 10px;
     margin-top: 30px;
-
 }
 
 .kotak{
     margin-top: 50px;
     margin: 40px;
     font-size:20px;
+    font-family: 'Bitter', serif;
+    font-weight: bold;
 }
 
 .kotak label Input{
@@ -140,37 +152,44 @@ a{
     height: 30px;
     margin-left: 50px;
     text-align: center;
+    font-family: 'Bitter', serif;
+    font-weight: bold;
+
 }
 
 .link a p:hover{
-    background-color: red;
+    background-color:  #3D8361;
     transition: 0.5s;
 }
 
 .link-2 a p:hover{
-    background-color: red;
+    background-color:  #3D8361;
     transition: 0.5;
 }
 
 .td h4:hover{
-    background-color: red;
+    background-color:  #3D8361;
     transition: 0.5;
 }
 
 .tombol td a:hover{
-    background-color: blue;
+    background-color:  #3D8361;
     transition: 0.5;
 }
 
 .kotak input:nth-child(6){
-    background-color: red;
+    background-color: #0F3460;
     border-radius: 20px;
     width: 120px;
     height: 30px;
     margin-top:20px;
     color: white;
-     font-family: 'Bitter', serif;
+    font-family: 'Bitter', serif;
+}
 
+.kotak input:nth-child(6):hover{
+    background-color: #3D8361;
+    transition: 0.5;
 }
 
     </style>

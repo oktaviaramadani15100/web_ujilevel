@@ -20,6 +20,11 @@ include "koneksi.php";
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@1,300&family=Lato:wght@100&family=Lobster&family=Playfair+Display:ital@1&family=Roboto:ital,wght@0,100;0,300;0,500;1,100&display=swap" rel="stylesheet">
+
+<!-- quicksand -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@1,300&family=Lato:wght@100&family=Lobster&family=Playfair+Display:ital@1&family=Quicksand:wght@300&family=Roboto:ital,wght@0,100;0,300;0,500;1,100&display=swap" rel="stylesheet">
 <style>
     .td{
         position: absolute;
@@ -29,25 +34,29 @@ include "koneksi.php";
     }
 
     .td table th{
-        background-color: #52C8C8;
+        background-color:  #0F3460;
         width:200px;
         height: 50px;
+        color: white;
+        font-family: 'Quicksand', sans-serif;
     }
 
     .td h4 {
-        background-color: #52C8C8;
+        background-color: #0F3460;
         margin-bottom: 4%;
         padding: 10px 10px;
         width: 100px;
         text-align: center;
         border-radius: 10px;
-        
        
     }
 
     .tombol tr td{
         height: 50px;
         text-align: center;
+        font-family: 'Quicksand', sans-serif;
+        color: black;
+        font-weight: bold;
     }
 
     .tombol tr a:first-child{
@@ -83,13 +92,13 @@ nav{
    height: 730px;
    left: 0;
    top: -30px;
-   box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+   box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.4);
    display: flex;
-   background-color: #52C8C8;
+   background-color: #0F3460;
    top: 0;
    position: fixed;
-}
 
+}
 nav .logo{
     height: 70px;
     width: 70px;
@@ -115,7 +124,8 @@ nav .logo{
     margin: 30px;
     font-weight: bold;
     font-style: italic;
-    font-size: 30px;
+    font-size: 40px;
+    color: white;
 }
 
 .link p{
@@ -129,7 +139,7 @@ nav .logo{
     margin-top: 80px;
     font-size: 20px;
     color: black;
-    margin-left: 20px;
+    margin-left: 30px;
     width: 150px;
     font-weight: bold;
 }
@@ -151,7 +161,7 @@ a{
     margin-top: 150px;
     font-size: 20px;
     color: black;
-    margin-left: 20px;
+    margin-left: 30px;
     width: 150px;
     font-weight: bold;
 }
@@ -166,7 +176,7 @@ h3{
 .td h4 a{
     font-family: 'Bitter', serif;
     font-weight: bold;
-    color: black;
+    color: white;
     font-size: 20px;
 }
 
@@ -179,22 +189,22 @@ h3{
 }
 
 .link a p:hover{
-    background-color: red;
+    background-color: #3D8361;
     transition: 0.5s;
 }
 
 .link-2 a p:hover{
-    background-color: red;
+    background-color: #3D8361;
     transition: 0.5;
 }
 
 .td h4:hover{
-    background-color: red;
+    background-color: #3D8361;
     transition: 0.5;
 }
 
 .tombol td a:hover{
-    background-color: blue;
+    background-color:  #3D8361;
     transition: 0.5;
 }
     

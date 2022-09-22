@@ -20,6 +20,11 @@ include 'koneksi.php'
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@1,300&family=Lato:wght@100&family=Lobster&family=Playfair+Display:ital@1&family=Roboto:ital,wght@0,100;0,300;0,500;1,100&display=swap" rel="stylesheet">
 
+<!-- quicksand -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@1,300&family=Lato:wght@100&family=Lobster&family=Playfair+Display:ital@1&family=Quicksand:wght@300&family=Roboto:ital,wght@0,100;0,300;0,500;1,100&display=swap" rel="stylesheet">
+
     <style>
 
         body{
@@ -29,12 +34,12 @@ include 'koneksi.php'
 nav{
     position: fixed;
     top: 0px;
-   width: 400px;
-   height: 750px;
-   box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
-   display: flex;
-   float: left;
-   background-color: #52C8C8;
+    width: 400px;
+    height: 750px;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+    display: flex;
+    float: left;
+    background-color: #0F3460;
 }
 
 nav .logo{
@@ -62,7 +67,8 @@ nav .logo{
     margin: 30px;
     font-weight: bold;
     font-style: italic;
-    font-size: 30px;
+    font-size: 35px;
+    color: white;
 }
 
 .link p{
@@ -76,7 +82,7 @@ nav .logo{
     margin-top: 80px;
     font-size: 20px;
     color: black;
-    margin-left: 20px;
+    margin-left: 30px;
     width: 150px;
     font-family: 'Bitter', serif;
     font-weight: bold;
@@ -99,11 +105,10 @@ a{
     margin-top: 150px;
     font-size: 20px;
     color: black;
-    margin-left: 20px;
+    margin-left: 30px;
     width: 150px;
     font-family: 'Bitter', serif;
     font-weight: bold;
-    
 }
 
 .td{
@@ -111,26 +116,33 @@ a{
         margin-left: 30%;
         top: 0;
         margin-top: 10%;
+
     }
 
     .td table th{
-        background-color: #52C8C8;
-        width:150px;
+        background-color:#0F3460;
+        width:170px;
         height: 50px;
+        color: white;
+        font-family: 'Quicksand', sans-serif;
     }
+
     .td h4 {
-        background-color: #52C8C8;
+        background-color: #0F3460;
         margin-bottom: 4%;
         padding: 10px 10px;
         width: 100px;
         text-align: center;
         border-radius: 10px;
-       
+        margin-top: -20px;
     }
 
     .tombol tr td{
         height: 70px;
         text-align: center;
+        font-family: 'Quicksand', sans-serif;
+        color: black;
+        font-weight: bold;
     }
 
     .tombol tr a:first-child{
@@ -141,6 +153,7 @@ a{
     padding: 5px 10px 5px 10px;
     font-size: 20px;
     color: white;
+    font-family: 'Bitter', serif;
     
     }
     .tombol tr a:nth-child(2){
@@ -150,36 +163,38 @@ a{
     font-size: 20px;
     color: white;
     padding: 5px 10px 5px 10px;
+    font-family: 'Bitter', serif;
     }
 
     h3{
         margin-left: 800px;
-        margin-top: 100px;
+        margin-top: 40px;
         font-size: 40px;
     }
 
     .td h4 a{
         font-family: 'Bitter', serif;
-        font-size:20px;
+        font-size: 20px;
+        color: white;
     }
 
     .link a p:hover{
-    background-color: red;
+    background-color:  #3D8361;
     transition: 0.5s;
 }
 
 .link-2 a p:hover{
-    background-color: red;
+    background-color:  #3D8361;
     transition: 0.5;
 }
 
 .td h4:hover{
-    background-color: red;
+    background-color:  #3D8361;
     transition: 0.5;
 }
 
 .tombol td a:hover{
-    background-color: blue;
+    background-color:  #3D8361;
     transition: 0.5;
 }
     </style>

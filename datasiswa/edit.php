@@ -29,11 +29,17 @@ if(mysqli_num_rows($query) < 1){
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@1,300&family=Lato:wght@100&family=Lobster&family=Playfair+Display:ital@1&family=Roboto:ital,wght@0,100;0,300;0,500;1,100&display=swap" rel="stylesheet">
 
+<!-- quicksand -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@1,300&family=Lato:wght@100&family=Lobster&family=Playfair+Display:ital@1&family=Quicksand:wght@300&family=Roboto:ital,wght@0,100;0,300;0,500;1,100&display=swap" rel="stylesheet">
+
+
     <style>
         .belajar{
             position: absolute;
             margin-top: 50px;
-            margin-left: 580px;
+            margin-left: 630px;
             border-radius: 10%;
             background-color: #D9D9D9;
             width: 530px;
@@ -51,12 +57,12 @@ if(mysqli_num_rows($query) < 1){
         .belajar p{
             margin-left:50px;
             margin: 40px;
-            
+            font-size: 20px;
+            font-family: 'Quicksand', sans-serif;
+            font-weight: bold;
         }
 
-        .belajar input{
-            margin-left: 30px;
-        }
+        
         
     *{
     margin: 0;
@@ -68,10 +74,10 @@ nav{
    height: 730px;
    left: 0;
    top: -30px;
-   box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+   box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.4);
    display: flex;
    float: left;
-   background-color: #52C8C8;
+   background-color:  #0F3460;
 }
 
 nav .logo{
@@ -99,7 +105,8 @@ nav .logo{
     margin: 30px;
     font-weight: bold;
     font-style: italic;
-    font-size: 30px;
+    font-size: 40px;
+    color: white;
 }
 
 .link p{
@@ -139,31 +146,24 @@ a{
 
 .link a p{
     font-family: 'Bitter', serif;
+    font-weight: bold;
 }
 
 .link-2 a p{
     font-family: 'Bitter', serif;
+    font-weight: bold;
 }
 
 .link a p:hover{
-    background-color: red;
+    background-color:  #3D8361;
     transition: 0.5s;
 }
 
 .link-2 a p:hover{
-    background-color: red;
+    background-color:  #3D8361;
     transition: 0.5;
 }
 
-.td h4 a:hover{
-    background-color: red;
-    transition: 0.5;
-}
-
-.tombol td a:hover{
-    background-color: blue;
-    transition: 0.5;
-}
 
 .belajar h3{
     font-family:'Playfair Display', serif;
@@ -172,29 +172,17 @@ a{
 
 .belajar p label input{
     border-radius: 20px;
-    width: 300px;
+    width: 250px;
     height: 30px;
     text-align: center;
     margin-left: 50px;
-}
+    font-family: 'Bitter', serif;
+    font-weight: bold;
 
-
-.tombol input:nth-child(4){
-    background-color: red;
-    width: 100px;
-    height:30px;
-    border-radius: 20px;
-    margin-left: 230px;
-
-}
-
-.tombol input:nth-child(4):hover{
-    background-color: blue;
-    transition: 0.5s;
 }
 
 .label input:nth-child(6){
-    background-color: red;
+    background-color:  #0F3460;
     border-radius: 20px;
     width: 120px;
     height: 30px;
@@ -204,7 +192,10 @@ a{
 
 }
 
-
+.label input:nth-child(6):hover{
+    background-color: #3D8361;
+    transition: 0.5s;
+}
 
 
 

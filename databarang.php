@@ -21,6 +21,11 @@ include "koneksi.php";
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@1,300&family=Lato:wght@100&family=Lobster&family=Playfair+Display:ital@1&family=Roboto:ital,wght@0,100;0,300;0,500;1,100&display=swap" rel="stylesheet">
+
+<!-- quicksand -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@1,300&family=Lato:wght@100&family=Lobster&family=Playfair+Display:ital@1&family=Quicksand:wght@300&family=Roboto:ital,wght@0,100;0,300;0,500;1,100&display=swap" rel="stylesheet">
     <style>
         /* navbar */
 
@@ -34,10 +39,10 @@ nav{
    height: 730px;
    left: 0;
    top: -30px;
-   box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+   box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.4);
    display: flex;
    float: left;
-   background-color: #52C8C8;
+   background-color: #0F3460;
 }
 
 nav .logo{
@@ -64,8 +69,9 @@ nav .logo{
     margin: 30px;
     font-weight: bold;
     font-style: italic;
-    font-size: 30px;
+    font-size: 40px;
     font-family: 'Bitter', serif;
+    color: white;
 }
 
 .link a p{
@@ -86,13 +92,14 @@ nav .logo{
 .box{
     position: absolute;
     text-align: center;
-    margin-left: 570px;
+    margin-left: 670px;
     margin-top: 150px;
     width:550px;
     border-radius: 10%;
     background-color: #D9D9D9;
     height: 450px;
     box-shadow: -3px -3px 2px rgba(0,0,0,0.4);
+
 }
 
 .box h3{
@@ -146,12 +153,16 @@ a{
 
 .box p label input{
     border-radius: 20px;
-    width: 300px; 
-    height: 30px;   
+    width: 250px; 
+    height: 30px;  
+    text-align: center; 
+    margin-left: 50px;
+    font-family: 'Bitter', serif;
+    font-weight: bold;
 }
 
 .box input:nth-child(4){
-    background-color: BLUE;
+    background-color: #0F3460;
     width: 100px;
     height:30px;
     border-radius: 15px;
@@ -161,20 +172,22 @@ a{
 
 .kotak p label{
     font-size: 20px;
+    font-weight: bold;
+    font-family: 'Quicksand', sans-serif;
 }
 
 .link a p:hover{
-    background-color: red;
+    background-color: #3D8361;
     transition: 0.5s;
 }
 
 .link-2 a p:hover{
-    background-color: red;
+    background-color: #3D8361;
     transition: 0.5;
 }
 
 .kotak input:nth-child(4):hover{
-    background-color: red;
+    background-color: #3D8361;
     transition: 0.5;
 }
     </style>
